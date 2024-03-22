@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huynh duc &#10084; Le chi </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huynh duc &#10084; Le chi</title>
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script>
-        $(document).ready(function(){
-            // Ngày cụ thể trong quá khứ (định dạng yyyy-mm-dd)
-            var ngayXua = new Date('2000-01-01');
-            
-            // Ngày hiện tại
-            var ngayHienTai = new Date();
-            
-            // Số lượng milliseconds giữa ngày hiện tại và ngày cụ thể trong quá khứ
-            var soMilliseconds = ngayHienTai - ngayXua;
-            
-            // Chuyển đổi milliseconds thành số ngày
-            var soNgay = Math.floor(soMilliseconds / (1000 * 60 * 60 * 24));
-            
-            // Hiển thị kết quả
-            $('#ketqua').text('Số ngày từ xưa đến hiện tại: ' + soNgay + ' ngày');
-        });
-        </script>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=M+PLUS+Rounded+1c&family=Nunito:wght@500&display=swap" rel="stylesheet">
+<script src="./js/jquery.js"></script>
+  </head>
+  <body>
     <div class="main">
-        <div id="ketqua"></div>
+      <div id="ketqua"></div>
+    <!-- start div1 -->
+      <div class="inner clearfix">
+        <div class="name">
+            <p class="firstname">Huỳnh Đức & Lệ Chi</p>
+        </div>
+        <div class="timer">
+          <p class="timer_title">Tụi mình đã yêu nhau được 
+            <span class="year_time"></span> năm 
+            <span class="month_time"></span> tháng 
+            <span class="day_time"></span> ngày 
+            <span class="hour_time"></span> giờ 
+            <span class="minutes_time"></span> phút
+            <span class="seconds_time"></span> giây
+            </p>
+    
+        </div>
+      </div>
+      <!-- end div1 -->
     </div>
-    <footer>
-
-    </footer>
+    <footer></footer>
     <audio autoplay loop>
-        <source src="./images/until_u.mp3">
+      <source src="./images/until_u.mp3" />
     </audio>
-    <script src="./js/jquery.js"></script>
+
     <script src="./js/top.js"></script>
-</body>
+  </body>
 </html>
