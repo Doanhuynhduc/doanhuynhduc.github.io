@@ -1,0 +1,328 @@
+@charset "UTF-8";
+@import "base.css";
+@import "fonts.css";
+/*==========================================================================*/
+/*                                                                          */
+/*    base.css  --> スタイルの初期設定を行うため、変更しないで下さい。      */
+/*    fonts.css --> フォントの初期設定を行うため、変更しないで下さい。      */
+/*                                                                          */
+/*==========================================================================*/
+
+/*==========================================================================*/
+/*                           Common-Setting                                 */
+/*==========================================================================*/
+/* 基本タグのフォントサイズを指定（12px -> 120% or 1.2em ） */
+:root {
+    --font-main: '游ゴシック体", "Yu Gothic", YuGothic, sans-serif';
+    /* FONT SITE */
+    --txt: #000;
+    /* COLOR TEXT */
+    --mcolor: #003b7d;
+    /* MAIN COLOR  */
+    --scolor: #999999;
+    /* SUB COLOR */
+
+    /* CUSTOM COLOR */
+    --blue: blue;
+    --gray: #e9e9e9;
+    --red: red;
+    --f-nts: 'Noto Sans JP', sans-serif;
+    --f-nsr: 'Noto Serif JP', serif;
+    --f-yumin: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝B", serif;
+    --f-yugo: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+textarea,
+select,
+p,
+blockquote,
+th,
+td,
+pre,
+address,
+li,
+dt,
+dd {
+    font-size: 160%;
+    -webkit-text-size-adjust: none;
+    font-weight: 400;
+}
+
+a {
+    transition: all ease 0.3s;
+    text-decoration: none;
+    color: var(--txt);
+}
+
+select {
+    visibility: visible !important;
+}
+
+[href^="tel:"] {
+    word-break: keep-all;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    flex-shrink: 0;
+    height: auto;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* RESET CHECK EMPTY */
+/* img:not([alt]),
+img[alt=''] {outline: 0 0 5px red;}
+a[href=""],
+a[href="#"],
+a[href^="javascript:"],
+a:not([href]) {background: red;} */
+
+/*==========================================================================*/
+/*                               Container                                  */
+/*==========================================================================*/
+html {
+    background: #fff;
+}
+
+body {
+    color: var(--txt);
+    -webkit-text-size-adjust: none;
+    min-width: 320px;
+    font-family: var(--font-main);
+}
+
+table {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.5;
+}
+
+p,
+dd,
+dt,
+li,
+th,
+td,
+address {
+    line-height: 2em;
+    letter-spacing: 0;
+}
+
+p {
+    margin: 0 0 1.5em;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+#wrapper {
+    min-width: 1260px;
+    overflow: hidden;
+    margin: 0 auto
+}
+
+.inner {
+    width: 1230px;
+    margin: 0 auto;
+    position: relative;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+/*==========================================================
+                      C U S T O M 
+==========================================================*/
+.flex_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_align {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_col_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.posr {
+    position: relative;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.red {
+    color: var(--red);
+}
+
+.txt_line {
+    text-decoration: underline;
+}
+
+.m0a {
+    display: block;
+    margin: 0 auto;
+}
+
+.f_big {
+    font-size: 150%;
+}
+
+.f_sm {
+    font-size: 80%;
+}
+
+/*==========================================================
+                       H E A D E R
+==========================================================*/
+header {}
+
+h1 {}
+
+/*==========================================================
+                  M A I N    V I S U A L
+==========================================================*/
+
+main {}
+
+/*==========================================================
+                M A I N    C O N T E N T
+==========================================================*/
+/* use private */
+/*==================== SEC01 ===================*/
+
+/*==================== SEC02 ===================*/
+
+/*==================== SEC03 ===================*/
+
+/*==================== SEC04 ===================*/
+
+/*==================== SEC05 ===================*/
+
+/*==================== SEC06 ===================*/
+
+/*==================== SEC07 ===================*/
+
+/*==================== SEC08 ===================*/
+
+
+/*==========================================================
+                        F O O T E R
+==========================================================*/
+
+
+address {
+    text-align: center;
+    background-color: var(--mcolor);
+    color: #fff;
+    font-size: 14px;
+    padding: 20px;
+}
+
+/* BACK TO TOP */
+.to_top {
+    position: fixed;
+    z-index: 11;
+    width: 60px;
+    height: 60px;
+    bottom: 70px;
+    right: 20px;
+    cursor: pointer;
+    transition: all .2s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.to_top.show {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* FIX EDGE ONLY  */
+@supports (-ms-ime-align: auto) {}
+
+/* FIREFOX ONLY */
+@-moz-document url-prefix() {}
+
+/* Safari 10.1+ (which is the latest version of Safari at this time) */
+@media not all and (min-resolution: 0.001dpcm) {}
+
+
+
+html , body {
+    cursor: url('../images/nor.png') 3 2, auto !important;
+    /* background-image: linear-gradient(140deg, #d3ffd0 0%, #98ecf8 50%, #afffbb 75%);
+    width: 100%;
+    height: 100%; */
+}
+html a:hover, body a:hover {
+    cursor: url('../images/hover.png') 3 2, auto !important
+}
