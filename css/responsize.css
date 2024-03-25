@@ -8,8 +8,16 @@
 	p.firstname {
         font-size: 11vw;
         font-weight: 600;
+        padding: 50px 0 40px;
     }
-
+    .timer_title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .sp{
+        display: block;
+      }
 }
 
 
