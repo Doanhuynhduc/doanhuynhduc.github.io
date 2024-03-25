@@ -2,4 +2,13 @@
 	.inner{
         max-width: 900px;
     }
+
 }
+@media screen and (max-width: 750px) {
+	p.firstname {
+        font-size: 11vw;
+    }
+
+}
+
+
