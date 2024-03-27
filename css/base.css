@@ -171,6 +171,9 @@ address {
 p{
     font-family: 'Nunito', sans-serif;
 }
+a{
+    font-family: 'Nunito', sans-serif;
+}
 .mb30{
     margin-bottom: 30px;
 }

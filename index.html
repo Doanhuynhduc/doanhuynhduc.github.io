@@ -1,80 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Huynh duc &#10084; Le chi</title>
-    <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/responsize.css" />
-    <link rel="stylesheet" href="./css/lightbox.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=M+PLUS+Rounded+1c&family=Nunito:wght@500&display=swap" rel="stylesheet">
-<script src="./js/jquery.js"></script>
-<script src="./js/lightbox.js"></script>
-  </head>
-  <body>
-    <div class="main">
-      <div id="ketqua"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Huynh duc &#10084; Le chi</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsize.css" />
+  <link rel="stylesheet" href="./css/lightbox.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=M+PLUS+Rounded+1c&family=Nunito:wght@500&display=swap"
+    rel="stylesheet" />
+  <script src="./js/jquery.js"></script>
+  <script src="./js/lightbox.js"></script>
+  <script>
+   function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+  </script>
+</head>
+
+<body>
+  <div class="main">
+    <div id="ketqua"></div>
     <!-- start div1 -->
-      <div class="inner clearfix">
-        <div class="name">
-            <p class="firstname">Huỳnh Đức & Lệ Chi</p>
+    <div class="inner clearfix">
+      <div class="name">
+        <p class="firstname">Huỳnh Đức & Lệ Chi</p>
+      </div>
+      <div class="timer">
+        <p class="timer_title">
+          Xin Chào! Tụi mình đã yêu nhau được <br class="sp" />
+          <span class="year_time"></span> năm
+          <span class="month_time"></span> tháng
+          <span class="day_time"></span> ngày
+          <span class="hour_time"></span> giờ
+          <span class="minutes_time"></span> phút
+          <span class="seconds_time"></span> giây rồi đó &#128150;
+        </p>
+      </div>
+      <div class="description center mb30">
+        <p class="des">
+          Cảm ơn bạn đã ghé thăm tụi mình. Site này lập ra chỉ để lưu lại hình
+          ảnh về những nơi mà tụi mình đã đi qua, những khoảnh khắc đáng nhớ
+          trong cuộc sống. Lỡ vô đây rồi thì cùng mình xem lại nhé, biết đâu
+          có những nơi bạn cũng từng đến, hoặc có bạn xuất hiện trong này thì
+          sao &#128522;
+        </p>
+      </div>
+    </div>
+    <!-- end div1 -->
+    <!-- tab -->
+    <div class="inner clearfix">
+      <div class="maintab">
+        <a class="btn tablink  active" onclick="openCity(event,'selfie')">Ảnh selfie</a>
+        
+          <a class="btn tablink" onclick="openCity(event,'address')">Địa điểm - Bạn bè</a>
+        
+        <a class="btn tablink" onclick="openCity(event,'food')">Ẩm thực</a>
+        <a class="btn tablink" onclick="openCity(event,'pet')">Thú cưng</a>
+      </div>
+    </div>
+
+    <div id="selfie" class="city">
+      <!-- Photo Grid -->
+    <div class="inner clearfix">
+      <div class="row">
+        <div class="column">
+          <a class="img-hover-zoom" href="./images/top_img_07.jpg" data-lightbox="selfie"
+            data-title="Công viên nước hoà bình"><img src="./images/top_img_07.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/top_img_05.jpg" data-lightbox="selfie" data-title="Vũng tàu nè"><img
+              src="./images/top_img_05.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/top_img_13.jpg" data-lightbox="selfie"
+            data-title="Công viên Hoàng Văn Thụ"><img src="./images/top_img_13.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/top_img_14.jpg" data-lightbox="selfie"
+            data-title="Carmelina Beach Resort"><img src="./images/top_img_14.jpg" style="width: 100%" /></a>
         </div>
-        <div class="timer">
-          <p class="timer_title">Xin Chào! Tụi mình đã yêu nhau được <br class="sp">
-            <span class="year_time"></span> năm 
-            <span class="month_time"></span> tháng 
-            <span class="day_time"></span> ngày 
-            <span class="hour_time"></span> giờ 
-            <span class="minutes_time"></span> phút
-            <span class="seconds_time"></span> giây rồi đó &#128150;
-            </p>
-    
+        <div class="column">
+          <a class="img-hover-zoom" href="./images/top_img_12.jpg" data-lightbox="selfie" data-title="Xem phim nè"><img
+              src="./images/top_img_12.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/top_img_15.jpg" data-lightbox="selfie" data-title="Đi net nè"><img
+              src="./images/top_img_15.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/top_img_08.jpg" data-lightbox="selfie" data-title="Buffet nè"><img
+              src="./images/top_img_08.jpg" style="width: 100%" /></a>
+              <a class="img-hover-zoom" href="./images/top_img_17.jpg" data-lightbox="selfie" data-title="Heee"><img
+                src="./images/top_img_17.jpg" style="width: 100%" /></a>
         </div>
-        <div class="description center mb30">
-            <p class="des ">Cảm ơn bạn đã ghé thăm tụi mình. Site này lập ra chỉ để lưu lại hình ảnh về những nơi mà tụi mình đã đi qua, những khoảnh khắc đáng nhớ trong cuộc sống. Lỡ vô đây rồi thì cùng mình xem lại nhé, biết đâu có những nơi bạn cũng từng đến, hoặc có bạn xuất hiện trong này thì sao &#128522;
-            </p>
+        <div class="column">
+          <a class="img-hover-zoom" href="./images/top_img_18.jpg" data-lightbox="selfie"
+            data-title="View triệu đô"><img src="./images/top_img_18.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/top_img_04.jpg" data-lightbox="selfie"
+            data-title="Cafe thú cưng"><img src="./images/top_img_04.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/top_img_02.jpg" data-lightbox="selfie" data-title="Tren phom mơ"><img
+              src="./images/top_img_02.jpg" style="width: 100%" /></a>
+        </div>
+        <div class="column">
+          <a class="img-hover-zoom" href="./images/top_img_03.jpg" data-lightbox="selfie"
+            data-title="Biển Quy nhơn"><img src="./images/top_img_03.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/top_img_10.jpg" data-lightbox="selfie"
+            data-title="Biển Quy nhơn"><img src="./images/top_img_10.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/top_img_09.jpg" data-lightbox="selfie" data-title="CicelK"><img
+              src="./images/top_img_09.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/top_img_16.jpg" data-lightbox="selfie" data-title="Lê Đức Thọ"><img
+              src="./images/top_img_16.jpg" style="width: 100%" /></a>
         </div>
       </div>
-      <!-- end div1 -->
-        <!-- Photo Grid -->
-        <div class="inner clearfix">
-        <div class="row"> 
-            <div class="column">
-              <a class="img-hover-zoom" href="./images/top_img_07.jpg" data-lightbox="selfie" data-title="Công viên nước hoà bình"><img src="./images/top_img_07.jpg" style="width:100%"></a>
-              <a class="img-hover-zoom" href="./images/top_img_05.jpg" data-lightbox="selfie" data-title="Vũng tàu nè"><img src="./images/top_img_05.jpg" style="width:100%"></a>
-              <a class="img-hover-zoom" href="./images/top_img_13.jpg" data-lightbox="selfie" data-title="Công viên Hoàng Văn Thụ"><img src="./images/top_img_13.jpg" style="width:100%"></a>
-              <a class="img-hover-zoom" href="./images/top_img_14.jpg" data-lightbox="selfie" data-title="Carmelina Beach Resort"><img src="./images/top_img_14.jpg" style="width:100%"></a>
-              <a class="img-hover-zoom" href="./images/top_img_17.jpg" data-lightbox="selfie" data-title="Heee"><img src="./images/top_img_17.jpg" style="width:100%"></a>
-            </div>
-            <div class="column">
-              <a class="img-hover-zoom" href="./images/top_img_01.jpg" data-lightbox="selfie" data-title="View triệu đô"><img src="./images/top_img_01.jpg" style="width:100%"></a>
-              <a class="img-hover-zoom" href="./images/top_img_12.jpg" data-lightbox="selfie" data-title="Xem phim nè"><img src="./images/top_img_12.jpg" style="width:100%"></a>
-              <a class="img-hover-zoom" href="./images/top_img_15.jpg" data-lightbox="selfie" data-title="Đi net nè"><img src="./images/top_img_15.jpg" style="width:100%"></a>
-              <a class="img-hover-zoom" href="./images/top_img_08.jpg" data-lightbox="selfie" data-title="Buffet nè"><img src="./images/top_img_08.jpg" style="width:100%"></a>
-            </div>  
-            <div class="column">
-              <a class="img-hover-zoom" href="./images/top_img_06.jpg" data-lightbox="selfie" data-title="Dũng tàu đồ ơ"><img src="./images/top_img_06.jpg" style="width:100%"></a>
-              <a class="img-hover-zoom" href="./images/top_img_18.jpg" data-lightbox="selfie" data-title="View triệu đô"><img src="./images/top_img_18.jpg" style="width:100%"></a>
-              <a class="img-hover-zoom" href="./images/top_img_04.jpg" data-lightbox="selfie" data-title="Cafe thú cưng"><img src="./images/top_img_04.jpg" style="width:100%"></a>
-              <a class="img-hover-zoom" href="./images/top_img_02.jpg" data-lightbox="selfie" data-title="Tren phom mơ"><img src="./images/top_img_02.jpg" style="width:100%"></a>
-              <a class="img-hover-zoom" href="./images/top_img_11.jpg" data-lightbox="selfie" data-title="Banh mi chao Quy nhơn"><img src="./images/top_img_11.jpg" style="width:100%"></a>
-            </div>
-            <div class="column">
-              <a class="img-hover-zoom" href="./images/top_img_03.jpg" data-lightbox="selfie" data-title="Biển Quy nhơn"><img src="./images/top_img_03.jpg" style="width:100%"></a>
-              <a class="img-hover-zoom" href="./images/top_img_10.jpg" data-lightbox="selfie" data-title="Biển Quy nhơn"><img src="./images/top_img_10.jpg" style="width:100%"></a>
-              <a class="img-hover-zoom" href="./images/top_img_09.jpg" data-lightbox="selfie" data-title="CicelK"><img src="./images/top_img_09.jpg" style="width:100%"></a>
-              <a class="img-hover-zoom" href="./images/top_img_16.jpg" data-lightbox="selfie" data-title="Lê Đức Thọ"><img src="./images/top_img_16.jpg" style="width:100%"></a>
-            </div>
+    </div>
+     <!-- Photo Grid -->
+    </div>
+
+    <div id="address" class="city" style="display: none">
+         <!-- Photo Grid -->
+    <div class="inner clearfix">
+      <div class="row">
+        <div class="column">
+          <a class="img-hover-zoom" href="./images/address_img_01.jpg" data-lightbox="selfie"
+            data-title="Công viên nước hoà bình"><img src="./images/address_img_01.jpg" style="width: 100%" /></a>
         </div>
+        <div class="column">
+          <a class="img-hover-zoom" href="./images/address_img_02.jpg" data-lightbox="selfie"
+            data-title="View triệu đô"><img src="./images/address_img_02.jpg" style="width: 100%" /></a>
+        </div>
+        <div class="column">
+          <a class="img-hover-zoom" href="./images/address_img_03.jpg" data-lightbox="selfie"
+            data-title="Dũng tàu đồ ơ"><img src="./images/address_img_03.jpg" style="width: 100%" /></a>
+          
+        </div>
+        <div class="column">
+          <a class="img-hover-zoom" href="./images/address_img_04.jpg" data-lightbox="selfie"
+            data-title="Dũng tàu đồ ơ"><img src="./images/address_img_04.jpg" style="width: 100%" /></a>
+          
+        </div>
+      </div>
     </div>
+     <!-- Photo Grid -->
     </div>
-    <footer>
- 
-    </footer>
-    <script src="./js/top.js"></script>
-  </body>
+
+    <div id="food" class="city" style="display: none">
+         <!-- Photo Grid -->
+    <div class="inner clearfix">
+      <div class="row">
+        <div class="column">
+          <a class="img-hover-zoom" href="./images/food_img_02.jpg" data-lightbox="selfie"
+          data-title="Banh mi chao Quy nhơn"><img src="./images/food_img_02.jpg" style="width: 100%" /></a>
+        </div>
+        <div class="column">
+          <a class="img-hover-zoom" href="./images/food_img_01.jpg" data-lightbox="selfie"
+          data-title="Banh mi chao Quy nhơn"><img src="./images/food_img_01.jpg" style="width: 100%" /></a>
+        </div>
+        <div class="column">
+         
+        </div>
+        <div class="column">
+         
+        </div>
+      </div>
+    </div>
+     <!-- Photo Grid -->
+    </div>
+    <div id="pet" class="city" style="display: none">
+         <!-- Photo Grid -->
+    <div class="inner clearfix">
+      <div class="row">
+        <div class="column">
+          <a class="img-hover-zoom" href="./images/pet_img_02.jpg" data-lightbox="selfie"
+          data-title="Công viên nước hoà bình"><img src="./images/pet_img_02.jpg" style="width: 100%" /></a>
+            <a class="img-hover-zoom" href="./images/pet_img_05.jpg" data-lightbox="selfie"
+            data-title="Công viên nước hoà bình"><img src="./images/pet_img_05.jpg" style="width: 100%" /></a>
+        </div>
+        <div class="column">
+          <a class="img-hover-zoom" href="./images/pet_img_01.jpg" data-lightbox="selfie"
+          data-title="Công viên nước hoà bình"><img src="./images/pet_img_01.jpg" style="width: 100%" /></a>
+     
+         
+        </div>
+        <div class="column">
+          <a class="img-hover-zoom" href="./images/pet_img_03.jpg" data-lightbox="selfie"
+          data-title="Công viên nước hoà bình"><img src="./images/pet_img_03.jpg" style="width: 100%" /></a>
+         
+        </div>
+        <div class="column">
+          <a class="img-hover-zoom" href="./images/pet_img_04.jpg" data-lightbox="selfie"
+          data-title="Công viên nước hoà bình"><img src="./images/pet_img_04.jpg" style="width: 100%" /></a>
+        </div>
+       
+      </div>
+    </div>
+     <!-- Photo Grid -->
+    </div>
+    <!-- end tab -->
+
+    
+  </div>
+  <footer></footer>
+  <script src="./js/top.js"></script>
+</body>
+
 </html>

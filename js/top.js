@@ -43,4 +43,6 @@ $(document).ready(function(){
 
     // Cập nhật kết quả sau mỗi giây
     setInterval(capNhatKetQua, 1000);
+
+
 });
