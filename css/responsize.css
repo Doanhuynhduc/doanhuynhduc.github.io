@@ -7,7 +7,7 @@
 }
 @media screen and (max-width: 750px) {
 	p.firstname {
-        font-size: 11vw;
+        font-size: 10vw;
         font-weight: 600;
         padding: 50px 0 40px;
     }
