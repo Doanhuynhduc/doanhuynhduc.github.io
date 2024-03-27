@@ -36,6 +36,13 @@
     .maintab {
         padding: 0;
     }
+    .maintab .btn{
+        width: calc(100% / 2 - 25px);
+        margin-bottom: 5px;
+      }
+      .maintab {
+        flex-wrap: wrap;
+    }
 }
 
 

@@ -89,13 +89,8 @@ p.firstname{
   text-align: center;
 }
 .maintab .btn.active{
-  width: calc(100% / 4);
-  margin: 0 2px;
   background: #ccc;
-  margin: 0 2px;
   color: #272727;
-  padding: 10px;
-  text-align: center;
 }
 .maintab .btn:hover{
   opacity: .8;
