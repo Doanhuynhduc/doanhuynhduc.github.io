@@ -39,6 +39,23 @@
     <div id="ketqua"></div>
     <!-- start div1 -->
     <div class="inner clearfix">
+      <audio id="audio" src="./images/until_u.mp3"></audio>
+      <a id="play" class="play-music" onclick="play()">Làm tí nhạc ko o.O</a>
+      <script>
+          function play() {
+              var audio = document.getElementById('audio');
+              if (audio.paused) {
+                  audio.play();
+                  $('#play').html('Không nghe nhạc nữa -.-')
+                  $('#play').addClass('pause')
+              }else{
+                  audio.pause();
+                  // audio.currentTime = 0
+                  $('#play').html('Làm tí nhạc ko o.O')
+                  $('#play').removeClass('pause')
+              }
+          }
+      </script>
       <div class="name">
         <p class="firstname">Huỳnh Đức & Lệ Chi</p>
       </div>
@@ -129,13 +146,13 @@
       <div class="row">
         <div class="column">
           <a class="img-hover-zoom" href="./images/address_img_01.jpg" data-lightbox="address"
-            data-title="Công viên nước hoà bình"><img src="./images/address_img_01.jpg" style="width: 100%" /></a>
+            data-title="Nóc hầm thủ thiêm"><img src="./images/address_img_01.jpg" style="width: 100%" /></a>
             <a class="img-hover-zoom" href="./images/address_img_05.jpg" data-lightbox="address"
-            data-title="Công viên nước hoà bình"><img src="./images/address_img_05.jpg" style="width: 100%" /></a>
+            data-title="Cầu Bình Lợi"><img src="./images/address_img_05.jpg" style="width: 100%" /></a>
         </div>
         <div class="column">
           <a class="img-hover-zoom" href="./images/address_img_02.jpg" data-lightbox="address"
-            data-title="View triệu đô"><img src="./images/address_img_02.jpg" style="width: 100%" /></a>
+            data-title="Tiệm cháo lươn"><img src="./images/address_img_02.jpg" style="width: 100%" /></a>
         </div>
         <div class="column">
           <a class="img-hover-zoom" href="./images/address_img_03.jpg" data-lightbox="address"
@@ -144,8 +161,7 @@
         </div>
         <div class="column">
           <a class="img-hover-zoom" href="./images/address_img_04.jpg" data-lightbox="address"
-            data-title="Dũng tàu đồ ơ"><img src="./images/address_img_04.jpg" style="width: 100%" /></a>
-          
+            data-title="Nóc hầm thủ thiêm"><img src="./images/address_img_04.jpg" style="width: 100%" /></a>
         </div>
       </div>
     </div>
@@ -157,19 +173,26 @@
     <div class="inner clearfix">
       <div class="row">
         <div class="column">
-          <a class="img-hover-zoom" href="./images/food_img_02.jpg" data-lightbox="selfie"
-          data-title="Banh mi chao Quy nhơn"><img src="./images/food_img_02.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/food_img_02.jpg" data-lightbox="food"
+          data-title="Bún + cháo lươn ngon nhứt nách"><img src="./images/food_img_02.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/food_img_05.jpg" data-lightbox="food"
+          data-title="Mòi nhậu bén"><img src="./images/food_img_05.jpg" style="width: 100%" /></a>
         </div>
         <div class="column">
-          <a class="img-hover-zoom" href="./images/food_img_01.jpg" data-lightbox="selfie"
-          data-title="Banh mi chao Quy nhơn"><img src="./images/food_img_01.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/food_img_01.jpg" data-lightbox="food"
+          data-title="Bánh mì chảo Quy nhơn"><img src="./images/food_img_01.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/food_img_06.jpg" data-lightbox="food"
+          data-title="Bánh mì nướng muối 20k nhiều ú ụ"><img src="./images/food_img_06.jpg" style="width: 100%" /></a>
         </div>
         <div class="column">
-          <a class="img-hover-zoom" href="./images/food_img_03.jpg" data-lightbox="selfie"
-          data-title="Banh mi chao Quy nhơn"><img src="./images/food_img_03.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/food_img_03.jpg" data-lightbox="food"
+          data-title="Bufet kỉ niệm 1 năm yêu nhau"><img src="./images/food_img_03.jpg" style="width: 100%" /></a>
+          <a class="img-hover-zoom" href="./images/food_img_07.jpg" data-lightbox="food"
+          data-title="Bột chiên chị guột giới thiệu"><img src="./images/food_img_07.jpg" style="width: 100%" /></a>
         </div>
         <div class="column">
-         
+          <a class="img-hover-zoom" href="./images/food_img_04.jpg" data-lightbox="food"
+          data-title="Cút lộn xào me 12h đêm"><img src="./images/food_img_04.jpg" style="width: 100%" /></a>
         </div>
       </div>
     </div>
@@ -204,7 +227,8 @@
             data-title="Máy con pet cưng"><img src="./images/pet_img_04.jpg" style="width: 100%" /></a>
             <a class="img-hover-zoom" href="./images/pet_img_08.jpg" data-lightbox="pet"
             data-title="Máy con pet cưng"><img src="./images/pet_img_08.jpg" style="width: 100%" /></a>
-         
+            <a class="img-hover-zoom" href="./images/pet_img_10.jpg" data-lightbox="pet"
+            data-title="Máy con pet cưng"><img src="./images/pet_img_10.jpg" style="width: 100%" /></a>
           </div>
         
         </div>
@@ -215,7 +239,9 @@
 
     
   </div>
-  <footer></footer>
+  <footer>
+  
+  </footer>
   <script src="./js/top.js"></script>
 </body>
 
