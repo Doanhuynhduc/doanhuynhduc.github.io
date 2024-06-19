@@ -159,3 +159,15 @@ p.firstname{
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
 }
+
+.list-video {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+  padding: 0 7px;
+}
+.list-video .item{
+  width: calc(100% / 4 - 10px);
+  height: auto;
+}

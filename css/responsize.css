@@ -15,6 +15,12 @@
   }
   
 @media screen and (max-width: 750px) {
+
+  .list-video .item{
+    width: calc(100% / 2 - 10px);
+    height: auto;
+  }
+
 	p.firstname {
         font-size: 10vw;
         font-weight: 600;
