@@ -87,6 +87,7 @@ p.firstname{
   color: #9f9f9f;
   padding: 10px;
   text-align: center;
+  border-radius: 5px;
 }
 .maintab .btn.active{
   background: #ccc;
