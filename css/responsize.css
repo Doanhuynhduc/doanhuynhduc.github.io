@@ -49,6 +49,12 @@
       .maintab {
         flex-wrap: wrap;
     }
+    .column {
+      padding: 0 1px;
+  }
+  .img-hover-zoom {
+    margin-bottom: 2px;
+}
 }
 
 
